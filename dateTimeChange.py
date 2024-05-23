@@ -9,12 +9,16 @@
 from datetime import date
 import pandas as pd
 
-
-def date_conversion(target_date,conversion_type):
+def date_conversion(target_date, conversion_type):
     """
+
     Args:
-        target_date (_type_): int/str/date/pd.Timestamp
-        type (_type_): 'int'/'str'/'date'/'timestamp'
+        target_date ():int/str/date/pd.Timestamp
+        conversion_type (str):'int'/'str'/'date'/'timestamp'
+
+    Returns:
+        int/str/date/pd.Timestamp
+
     """
     if type(target_date) is int:
         year = f'{target_date}'[:4]
